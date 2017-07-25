@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="@dimen/horizontal_padding"
+    android:paddingRight="@dimen/horizontal_padding">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/tutorial_title"
+        android:textColor="@android:color/white"
+        android:textSize="31sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/hint"
+        android:layout_below="@+id/title"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/circle_1"
+                android:layout_width="@dimen/tutorial_circle_size"
+                android:layout_height="@dimen/tutorial_circle_size"
+                android:background="@drawable/circle"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/circle_1"
+                android:layout_alignTop="@+id/circle_1"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/circle_1"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@string/tutorial_hint_one"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/circle_2"
+                android:layout_width="@dimen/tutorial_circle_size"
+                android:layout_height="@dimen/tutorial_circle_size"
+                android:layout_below="@+id/circle_1"
+                android:layout_marginBottom="14dp"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/circle"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/circle_2"
+                android:layout_alignTop="@+id/circle_2"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/circle_2"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@string/tutorial_hint_two"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/circle_3"
+                android:layout_width="@dimen/tutorial_circle_size"
+                android:layout_height="@dimen/tutorial_circle_size"
+                android:layout_below="@+id/circle_2"
+                android:background="@drawable/circle"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/circle_3"
+                android:layout_alignTop="@+id/circle_3"
+                android:layout_marginLeft="32dp"
+                android:layout_toRightOf="@+id/circle_3"
+                android:fontFamily="sans-serif"
+                android:gravity="center_vertical"
+                android:text="@string/tutorial_hint_three"
+                android:textColor="@color/white_transparent"
+                android:textSize="12sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button_start"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/tutorial_hint"
+        android:textColor="@android:color/white"
+        android:textSize="10sp" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/button_start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/tutorial_margin_bottom"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/tutorial_button"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"
+        android:backgroundTint="@color/button_selector" />
+
+</RelativeLayout>

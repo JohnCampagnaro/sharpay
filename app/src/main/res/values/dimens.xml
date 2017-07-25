@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="horizontal_padding">58dp</dimen>
+
+    <dimen name="login_padding">@dimen/horizontal_padding</dimen>
+    <dimen name="login_message_margin_bottom">35dp</dimen>
+    <dimen name="login_message_margin_top">5dp</dimen>
+
+    <dimen name="home_margin_bottom">34dp</dimen>
+
+    <dimen name="tutorial_margin_bottom">44dp</dimen>
+    <dimen name="tutorial_margin_top">49dp</dimen>
+    <dimen name="tutorial_circle_size">40dp</dimen>
+</resources>

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Sharpay</string>
+
+    <string name="login_message">Pague sua comanda sem filas</string>
+
+    <string name="home_name">Olá %1$s</string>
+    <string name="home_message">Pronto para iniciar a balada?</string>
+    <string name="home_button">SIM, INICIAR AGORA</string>
+
+    <string name="tutorial_button">LER O QR CODE DA MESA</string>
+    <string name="tutorial_title">Para iniciar a mesa, siga esses passos...</string>
+    <string name="tutorial_hint_one">Encontre uma mesa de sua preferência e acomode-se...</string>
+    <string name="tutorial_hint_two">Faça a leitura do QR Code e dê um nome para sua mesa...</string>
+    <string name="tutorial_hint_three">Acompanhe seus pedidos e aproveite a sua noite.</string>
+    <string name="tutorial_hint">Lembre-se, Se beber, não dirija.</string>
+
+    <string name="qrcode_message">FAÇA A LEITURA DO QRCODE DA MESA</string>
+
+    <string name="table_name_title">Dê um nome para sua mesa!</string>
+    <string name="table_name_sample">Exemplos (Niver do Ricardo, Despedida da Michele ou HappyHourdaFirma)</string>
+    <string name="table_name_label">Nome da Mesa</string>
+
+    <string name="empty_table_title">PRONTO ;)</string>
+    <string name="empty_table_message">Faça seus pedidos ao garçom e acompanhe por aqui.</string>
+
+    <string name="table_order_show_my_orders">Mostrar somente meus pedidos</string>
+    <string name="table_order_pay_button">TOTAL DA MESA</string>
 </resources>

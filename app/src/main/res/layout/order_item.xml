@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F5F5F5"
+    android:paddingBottom="15dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="13dp">
+
+    <TextView
+        android:id="@+id/owner"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/gray_light"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:lines="1"
+        android:maxLength="2"
+        android:text="JC"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/item_name"
+        android:layout_toLeftOf="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/owner"
+        android:fontFamily="sans-serif"
+        android:lines="1"
+        android:text="Teste"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/timer_icon"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_below="@+id/item_name"
+        android:layout_marginRight="6dp"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/order_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/item_name"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@+id/timer_icon"
+        android:fontFamily="sans-serif-light"
+        android:lines="1"
+        android:text="5m"
+        android:textColor="@color/gray_light"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-medium"
+        android:lines="1"
+        android:text="R$ 9999,99"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+</RelativeLayout>
