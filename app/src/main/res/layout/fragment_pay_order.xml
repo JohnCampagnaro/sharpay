@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/owner"
+            android:layout_toRightOf="@+id/owner"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="Niver do Zé (Bute bola zoito)"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/date_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/owner"
+            android:layout_toRightOf="@+id/owner"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="12 jul 2017 - 19:35"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/owner"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/divider"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/gray_light"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:lines="1"
+            android:maxLength="2"
+            android:text="JC"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/container"
+            android:background="@color/gray_light" />
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/divider2" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/label_price_order"
+            android:background="@color/gray_light" />
+
+        <TextView
+            android:id="@+id/label_price_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/label_tips"
+            android:layout_alignLeft="@+id/label_price_plus_tips"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="14dp"
+            android:layout_toLeftOf="@+id/price_order"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="@string/pay_order_label_price"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/price_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/price_plus_tips"
+            android:layout_alignTop="@id/label_price_order"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="R$ 999,99"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/label_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/label_price_plus_tips"
+            android:layout_alignLeft="@+id/label_price_plus_tips"
+            android:layout_toLeftOf="@+id/tips"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="@string/pay_order_label_tips"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/price_plus_tips"
+            android:layout_alignTop="@id/label_tips"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="R$ 999,99"
+            android:textColor="@color/gray_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/label_price_plus_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/button_pay"
+            android:layout_marginBottom="19dp"
+            android:layout_marginLeft="21dp"
+            android:layout_toLeftOf="@+id/price_plus_tips"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="@string/pay_order_label_price_plus_tips"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/price_plus_tips"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/label_price_plus_tips"
+            android:fontFamily="sans-serif"
+            android:lines="1"
+            android:text="R$ 9.999,99"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/button_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/gray"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:minHeight="47dp"
+            android:text="@string/pay_order_button"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

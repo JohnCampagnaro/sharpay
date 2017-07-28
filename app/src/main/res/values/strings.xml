@@ -25,4 +25,9 @@
 
     <string name="table_order_show_my_orders">Mostrar somente meus pedidos</string>
     <string name="table_order_pay_button">TOTAL DA MESA</string>
+
+    <string name="pay_order_button">fechar conta</string>
+    <string name="pay_order_label_price_plus_tips">Total</string>
+    <string name="pay_order_label_tips">+10% Gorjeta (opcional)</string>
+    <string name="pay_order_label_price">Subtotal</string>
 </resources>

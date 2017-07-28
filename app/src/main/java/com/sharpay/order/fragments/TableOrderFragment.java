@@ -22,7 +22,7 @@ import java.util.List;
  * Created by johnc on 23/07/2017.
  */
 
-public class TableOrderFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener {
+public class TableOrderFragment extends BaseFragment implements CompoundButton.OnCheckedChangeListener, View.OnClickListener {
     private OrdersAdapter mAdapter;
 
     @Nullable
@@ -45,6 +45,8 @@ public class TableOrderFragment extends BaseFragment implements CompoundButton.O
 
         SwitchCompat myOrders = (SwitchCompat) view.findViewById(R.id.show_my_orders_switch);
         myOrders.setOnCheckedChangeListener(this);
+
+        view.findViewById(R.id.button_pay).setOnClickListener(this);
     }
 
     //TODO criar lista tempoária de pedidos
@@ -66,5 +68,10 @@ public class TableOrderFragment extends BaseFragment implements CompoundButton.O
             mAdapter.filter("JC");
         } else
             mAdapter.filter(null);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switchToFragment(PayOrderFragment.class.getName(), R.id.container, true);
     }
 }
